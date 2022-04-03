@@ -15,10 +15,10 @@
 }
 
 body {
-  height: 100vh;
-  background: black url("../assets/images/bg.png") center center / cover
-    no-repeat fixed;
+  background: rgba(0, 0, 0, 0.816) url("../assets/images/bg.png") center center /
+    cover no-repeat fixed;
   text-align: center;
+  overflow-y: scroll;
   color: $text-white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
