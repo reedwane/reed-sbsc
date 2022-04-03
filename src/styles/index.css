@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: black url("../assets/images/bg.png") center center/cover no-repeat fixed;
+  text-align: center;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+  text-align: center;
+  max-width: 600px;
+  height: 100vmax;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: white;
+  padding: 0.5em;
+  margin-bottom: 10%;
+}
+
+.header--logo {
+  display: inline-block;
+  text-align: left;
+  width: 30%;
+  color: #ff7a7a;
+}
+
+.nav {
+  display: inline-block;
+  width: 70%;
+  text-align: right;
+}
+
+.nav--link {
+  display: inline-block;
+  margin: 0.5em;
+  text-decoration: none;
+  color: #ff7a7a;
+  border-bottom: 1px solid #ff7a7a;
+  padding: 0.2em;
+}
+
+.login,
+.signup {
+  margin: 0 auto;
+}
+
+.form--login {
+  margin: 0 auto;
+  background-color: white;
+  width: 90%;
+  max-width: 500px;
+  height: 30em;
+  border-radius: 20px;
+  padding: 5%;
+  color: #ff7a7a;
+}
+
+.error {
+  color: black;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.login--label {
+  text-align: left;
+  font-size: 1.3rem;
+  margin-top: 2em;
+}
+
+.login--input,
+.login--select {
+  height: 3em;
+  width: 90%;
+  margin: 5% 0 10%;
+  outline: none;
+  border: 1px solid #ff7a7a;
+  text-indent: 10%;
+  font-size: 1rem;
+}
+
+.button {
+  width: 5em;
+  height: 3em;
+  border: none;
+  background-color: #ff7a7a;
+  font-size: 1rem;
+  color: white;
+  border-radius: 20px;
+}
+
+.user {
+  margin: 0 auto;
+  padding: 5%;
+  width: 75%;
+  height: 60vh;
+  border: 2px solid white;
+}
+
+.user--avatar {
+  border-radius: 50%;
+}
+
+.user-text {
+  text-align: left;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+
+.user--email {
+  font-size: 1rem;
+}
+
+.users-list {
+  width: 100%;
+  padding: 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 3em;
+  letter-spacing: 0.1em;
+}
+
+.user--card {
+  border: 1px solid #ff7a7a;
+  padding: 5%;
+  border-radius: 20px;
+}
+
+.button__page-number {
+  margin: 3%;
+  background-color: white;
+  color: black;
+  border: 2px solid #ff7a7a;
+}
+
+.footer {
+  margin-top: 5em;
+  width: 100%;
+}
+
+.footer--link {
+  color: #ff7a7a;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */
