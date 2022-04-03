@@ -1,4 +1,3 @@
-import LoginButton from "../components/LoginButton";
 import LoginForm from "../components/LoginForm";
 
 const Signup = () => {

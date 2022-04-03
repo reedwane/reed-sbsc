@@ -4,7 +4,7 @@ import { useSetDataContext } from "../context/dataContext";
 import { useSetLoadingContext } from "../context/loadingContext";
 
 const useSignupLogin = (text, details, id) => {
-  const { email, password, emailError, passwordError } = details;
+  const { email, password, passwordError } = details;
   const navigate = useNavigate();
   const setLoading = useSetLoadingContext();
   const setData = useSetDataContext();

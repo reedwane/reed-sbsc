@@ -13,7 +13,7 @@ const useAuth = () => {
     } else {
       if (!data) setData(localStorage.getItem("data")); // restore the data to the state if incase the browser was refreshed
     }
-  }, []);
+  });
 };
 
 export default useAuth;

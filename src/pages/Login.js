@@ -1,6 +1,4 @@
-import LoginButton from "../components/LoginButton";
 import LoginForm from "../components/LoginForm";
-import axios from "axios";
 
 const Login = () => {
   // const fire = () => {

@@ -1,6 +1,5 @@
 import useValidateInput from "../hooks/useValidateInput";
 import LoginButton from "./LoginButton";
-import useState from "react";
 
 const LoginForm = (props) => {
   const { state, handleChange, handleError, id } = useValidateInput();
