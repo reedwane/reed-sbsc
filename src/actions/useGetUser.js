@@ -25,7 +25,7 @@ const useGetUser = () => {
         console.log(error);
       }
     })();
-  }, [setLoading]);
+  }, [setLoading, id]);
 
   return { data };
 };
