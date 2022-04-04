@@ -17,11 +17,12 @@ const Header = () => {
       <nav className="nav">
         {!data && (
           <>
-            <Link className="link nav--link" to="signup">
-              Signup
-            </Link>
-            <Link className="link nav--link" to="login">
+            <Link className="link nav--link nav-login" to="login">
               Login
+            </Link>
+
+            <Link className="link nav--link nav-signup" to="signup">
+              Signup
             </Link>
           </>
         )}

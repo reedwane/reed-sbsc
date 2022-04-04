@@ -54,6 +54,12 @@ code {
   padding: 0.2em;
 }
 
+.nav-signup {
+  color: white;
+  background-color: #ff7a7a;
+  border-radius: 15px;
+}
+
 .login,
 .signup {
   margin: 0 auto;

@@ -8,7 +8,7 @@ const useValidateInput = (e) => {
     email: "eve.holt@reqres.in",
     password: "",
     emailError: false, // couldnt properly validate since the emails are predefined
-    passwordError: true,
+    passwordError: false,
     // id: "2",
   });
 
