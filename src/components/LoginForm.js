@@ -3,9 +3,12 @@ import LoginButton from "./LoginButton";
 import { useState } from "react";
 
 const LoginForm = (props) => {
-  const [password, showPassword] = useState("password");
+  const [password, showPassword] = useState("password"); //to toggle the password input type
+  const [eye, setEye] = useState("fa-eye");
+
   const handleShow = () => {
-    password === "password" ? showPassword("text") : showPassword("password");
+    password === "password" ? showPassword("text") : showPassword("password"); // toggle the input type
+    eye === "fa-eye" ? setEye("fa-eye-slash") : setEye("fa-eye"); // toggle the eye
   };
   const { state, handleChange, handleError, id } = useValidateInput();
 
@@ -70,7 +73,7 @@ const LoginForm = (props) => {
           onChange={handleChange}
           onKeyUp={handleError}
         />
-        <i className="fas fa-eye" onClick={handleShow}></i>
+        <i className={`fa ${eye} eye`} onClick={handleShow}></i>
       </label>
 
       <LoginButton text={props.text} details={state} id={id} />

@@ -97,9 +97,10 @@ code {
   width: 80%;
 }
 
-.fa-eye {
+.eye {
   display: inline-block;
   width: 5%;
+  margin: 0.2em;
 }
 
 .button {
