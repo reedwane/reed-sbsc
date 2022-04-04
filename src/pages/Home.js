@@ -10,7 +10,6 @@ const Home = () => {
 
   const res = useGetUser();
   const data = res.data;
-  console.log(data);
 
   return (
     <div className="user">

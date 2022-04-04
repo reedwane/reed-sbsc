@@ -1,8 +1,14 @@
 import useValidateInput from "../hooks/useValidateInput";
 import LoginButton from "./LoginButton";
+import { useState } from "react";
 
 const LoginForm = (props) => {
+  const [password, showPassword] = useState("password");
+  const handleShow = () => {
+    password === "password" ? showPassword("text") : showPassword("password");
+  };
   const { state, handleChange, handleError, id } = useValidateInput();
+
   return (
     <form className="form--login">
       <label className="label login--label" htmlFor="email">
@@ -57,13 +63,14 @@ const LoginForm = (props) => {
         )}
         <input
           className="login--input"
-          type="password"
+          type={password}
           name="password"
           placeholder="password"
           value={state.password}
           onChange={handleChange}
           onKeyUp={handleError}
         />
+        <i className="fas fa-eye" onClick={handleShow}></i>
       </label>
 
       <LoginButton text={props.text} details={state} id={id} />

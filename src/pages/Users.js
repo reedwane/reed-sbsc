@@ -23,7 +23,6 @@ const Users = () => {
 
   const res = useGetUsers(page);
   const data = res.data;
-  console.log(data);
 
   return (
     <div className="users">
